@@ -1,0 +1,77 @@
+body {
+  background-image: url("night-sky-trees.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+a {
+  color: #fff;
+}
+
+.question-div {
+  padding: 70px;
+  font-family: monospace;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.input-div {
+  text-align: center;
+}
+
+.btn,
+#question-input {
+  border: 1px solid #fff;
+  background: #00030c;
+  font-size: 22px;
+  color: #fff;
+  font-family: monospace;
+  border-radius: 10px;
+}
+
+#question-input {
+  margin: 20px;
+  line-height: 38px;
+  width: 40%;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 25px;
+}
+
+.btn:hover {
+  background: #e599f7;
+  color: #fff;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: black;
+  }
+  .container {
+    background-image: url("night-sky-trees.jpg");
+    background-size: cover;
+  }
+  .question-div h1 {
+    font-size: 32px;
+  }
+  #question-input {
+    width: 75%;
+    margin: 5px;
+  }
+  .btn {
+    margin: 30px auto;
+  }
+}

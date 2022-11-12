@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask the Stars</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container bg-image">
+      <div class="question-div">
+        <h1>what do you need to know?</h1>
+      </div>
+      <div class="input-div">
+        <form id="question-form" class="question-bar" novalidate>
+          <input type="text" id="question-input" autocomplete="off" required />
+
+          <button
+            type="submit"
+            onclick="askQuestion(event)"
+            id="submit-button"
+            class="btn"
+          >
+            ask
+          </button>
+
+          <button
+            type="submit"
+            onclick="reset(event)"
+            id="reset-button"
+            class="btn"
+          >
+            reset
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
